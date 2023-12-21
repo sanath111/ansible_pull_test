@@ -2,14 +2,62 @@
   apt:
     name:
       - aria2
+      - autofs
+      - build-essential
+      - cifs-utils
       - curl
+      - firejail
       - git
+      - gnome-tweaks
+      - gnome-shell-extensions
+      - gnome-shell-extension-manager
+      - gwenview
       - htop
       - iftop
+      - iotop
+      - imagemagick
+      - ipython3
+      - libnss-ldap
+      - libpam-ldap
+      - linux-tools-common
+      - linux-tools-generic
+      - mpv
       - nano
       - neofetch
+      - ntfs-3g
+      - openssh-client
+      - openssh-server
+      - pidgin
       - postfix
+      - python3
+      - python3-appdirs
+      - python3-arrow
+      - python3-dbus.mainloop.pyqt5
+      - python3-dev
+      - python3-flask
+      - python3-jinja2
+      - python3-ldap
+      - python3-mysqldb
+      - python3-pil
+      - python3-pip
+      - python3-psutil
+      - python3-pyqt5
+      - python3-requests
+      - python3-setproctitle
+      - python3-setuptools
+      - python3-simplejson
+      - python3-xlib
+      - python3-yaml
+      - python3-zmq
+      - qt5ct
+      - qtcreator
+      - qttools5-dev-tools
       - rename
       - screen
+      - supervisor
+      - terminator
+      - thunar
       - tree
       - vim
+      - xclip
+      - xiccd
