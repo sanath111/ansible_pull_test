@@ -1,8 +1,8 @@
 - name: create ansible user
-  become: true
   user:
     name: ansible
     system: yes
+    home: /opt/home/ansible
 
 - name: copy sudoers_ansible
   copy:
