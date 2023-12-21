@@ -1,4 +1,5 @@
 - name: create ansible user
+  become: true
   user:
     name: ansible
     system: yes
