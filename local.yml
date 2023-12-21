@@ -2,10 +2,11 @@
   connection: local
   become: true
 
+  pre_tasks:
+    - name: Update Repositories
+      apt:
+        update_cache: yes
+      changed_when: False
+  
   tasks:
-  - name: Install Packages
-    apt:
-      name:
-        - htop
-        - nano
-        - neofetch
+    - include: tasks/packages.yml
