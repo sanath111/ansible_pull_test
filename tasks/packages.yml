@@ -1,7 +1,15 @@
 - name: install packages
   apt:
     name:
+      - aria2
+      - curl
+      - git
       - htop
+      - iftop
       - nano
       - neofetch
       - postfix
+      - rename
+      - screen
+      - tree
+      - vim
