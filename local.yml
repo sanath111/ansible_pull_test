@@ -13,7 +13,8 @@
     # - include: tasks/users.yml
     # - include: tasks/cron.yml
     # - include: tasks/enable-bash.yml
-    - include: tasks/install-drivers.yml
+    # - include: tasks/install-drivers.yml
+    - include: tasks/mkdirsandpaths.yml
     - include: tasks/packages.yml
     - include: tasks/autofs.yml
     - include: tasks/ldap.yml

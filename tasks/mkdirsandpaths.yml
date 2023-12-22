@@ -1,0 +1,25 @@
+- name: set python3
+  command: sudo ln -sf /usr/bin/python3 /usr/bin/python
+
+- name: create crap folders
+  command: "sudo {{ item }}"
+  with_items:
+  - mkdir -p -m 777 /crap/LOCAL.crap
+  - mkdir -p -m 777 /crap/versionCache
+  - mkdir -p -m 777 /crap/mercurial
+  
+
+- name: make symlinks
+  command: "sudo {{ item }}"
+  with_items:
+  - ln -sf /blueprod/CRAP/crap /crap/crap.server
+  - ln -sf /blueprod/STOR1/proj /proj
+  - ln -sf /blueprod/STOR1/projdump /projdump
+  - ln -sf /blueprod/STOR1/library /library
+
+- name: make home for bluepixels
+  command: "sudo {{ item }}"
+  with_items:
+  - mkdir -p /opt/home/bluepixels
+  - chown -R bluepixels:bluepixels /opt/home/bluepixels
+  - usermod -d /opt/home/bluepixels bluepixels
