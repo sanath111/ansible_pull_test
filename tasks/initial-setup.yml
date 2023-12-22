@@ -1,0 +1,2 @@
+- name: initial setup
+  command: sudo apt install openssh-server -y
