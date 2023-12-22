@@ -1,0 +1,12 @@
+- name: setup autofs
+  copy:
+    src: "{{item}}"
+    dest: /etc
+    owner: root
+    group: root
+    mode: 0644
+  with_fileglob:
+    - files/autofs/auto*
+
+- name: reatart autofs
+  command: sudo systemctl restart autofs
