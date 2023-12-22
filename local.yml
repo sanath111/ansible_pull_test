@@ -9,8 +9,8 @@
       changed_when: False
   
   tasks:
-    - include: tasks/users.yml
-    - include: tasks/cron.yml
+    # - include: tasks/users.yml
+    # - include: tasks/cron.yml
     - include: tasks/enable-bash.yml
-    - include: tasks/packages.yml
-    - include: tasks/autofs.yml
+    # - include: tasks/packages.yml
+    # - include: tasks/autofs.yml
