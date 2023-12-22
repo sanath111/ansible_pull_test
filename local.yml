@@ -10,19 +10,20 @@
   
   tasks:
     - include: tasks/initial-setup.yml
+    - include: tasks/bluepixels-home.yml
     # - include: tasks/users.yml
     # - include: tasks/cron.yml
     # - include: tasks/enable-bash.yml
     # - include: tasks/install-drivers.yml
     # - include: tasks/mkdirsandpaths.yml
-    - include: tasks/packages.yml
-    - include: tasks/autofs.yml
-    - include: tasks/ldap.yml
-    - include: tasks/pamd.yml
-    - include: tasks/nsswitch.yml
-    - include: tasks/sysctl.yml
-    - include: tasks/hosts.yml
-    - include: tasks/x11.yml
-    - include: tasks/sudoers.yml
-    - include: tasks/logind-conf.yml
-    - include: tasks/setup-blender.yml
+    # - include: tasks/packages.yml
+    # - include: tasks/autofs.yml
+    # - include: tasks/ldap.yml
+    # - include: tasks/pamd.yml
+    # - include: tasks/nsswitch.yml
+    # - include: tasks/sysctl.yml
+    # - include: tasks/hosts.yml
+    # - include: tasks/x11.yml
+    # - include: tasks/sudoers.yml
+    # - include: tasks/logind-conf.yml
+    # - include: tasks/setup-blender.yml

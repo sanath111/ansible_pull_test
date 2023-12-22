@@ -13,4 +13,4 @@
     mode: 0644
 
 - name: reatart sshd
-  command: sudo systemctl restart sshd
+  command: systemctl restart sshd
