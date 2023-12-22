@@ -15,7 +15,8 @@
 
     # - include: tasks/initial-setup.yml
     # - include: tasks/bluepixels-home.yml
-    # - include: tasks/default-apps.yml
+
+    - include: tasks/default-apps.yml
 
     # - include: tasks/install-drivers.yml
 
@@ -29,7 +30,8 @@
     # - include: tasks/logind-conf.yml
     # - include: tasks/setup-blender.yml
 
-    - include: tasks/mkdirsandpaths.yml
+    # - include: tasks/mkdirsandpaths.yml
+    
     
     # - include: tasks/enable-bash.yml
     # - include: tasks/sysctl.yml
