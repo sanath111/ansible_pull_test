@@ -9,4 +9,4 @@
     - files/autofs/auto*
 
 - name: reatart autofs
-  command: sudo systemctl restart autofs
+  command: systemctl restart autofs
