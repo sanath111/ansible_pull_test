@@ -18,6 +18,15 @@
     - /crap/versionCache
     - /crap/mercurial
 
+- name: make crap symlink
+  file:
+    src: /blueprod/CRAP/crap
+    dest: /crap/crap.server
+    force: yes
+    owner: root
+    group: root
+    state: link
+
 - name: make symlinks
   file:
     src: "{{ item.src }}"
@@ -26,7 +35,6 @@
     group: root
     state: link
   with_items:
-    - { src: '/blueprod/CRAP/crap', dest: '/crap/crap.server' }
     - { src: '/blueprod/STOR1/proj', dest: '/proj' }
     - { src: '/blueprod/STOR1/projdump', dest: '/projdump' }
     - { src: '/blueprod/STOR1/library', dest: '/library' }
