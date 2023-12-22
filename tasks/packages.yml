@@ -53,6 +53,7 @@
       - qtcreator
       - qttools5-dev-tools
       - rename
+      - rsync
       - screen
       - supervisor
       - terminator
