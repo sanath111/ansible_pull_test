@@ -1,5 +1,5 @@
 - name: remove old blender
-  command: sudo rm -fv /usr/local/bin/blender*
+  command: rm -fv /usr/local/bin/blender*
 
 - name: setup-blender
   copy:

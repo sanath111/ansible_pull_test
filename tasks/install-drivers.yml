@@ -1,2 +1,2 @@
 - name: install drivers
-  command: sudo ubuntu-drivers install 
+  command: ubuntu-drivers install 
