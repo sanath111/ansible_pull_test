@@ -12,5 +12,5 @@
     group: root
     mode: 0644
 
-- name: reatart sshd
+- name: restart sshd
   command: systemctl restart sshd
