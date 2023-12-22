@@ -1,0 +1,20 @@
+#!/bin/bash
+export LC_ALL="en_US.UTF-8"
+
+if [[ $USER = "bluepixels" ]]; then
+    echo "Not available to bluepixels"
+else
+    if [ -f /etc/gentoo-release ]; then
+        if [ -f /etc/gentoo-17.0.1 ]; then
+            /proj/standard/share/blender-2.78.5-gentoo-17.0.1-py35/blender --python /projdump/pythonTestWindoze.DONOTDELETE/rbhus/etc/startupScripts/blend/beforeFile.py "$@" --python /projdump/pythonTestWindoze.DONOTDELETE/rbhus/etc/startupScripts/blend/afterFile.py
+        elif [ -f /etc/gentoo-17.0.2 ]; then
+            /proj/standard/share/blender-2.78.5-gentoo-17.0.2-py35/blender --python /projdump/pythonTestWindoze.DONOTDELETE/rbhus/etc/startupScripts/blend/beforeFile.py "$@" --python /projdump/pythonTestWindoze.DONOTDELETE/rbhus/etc/startupScripts/blend/afterFile.py
+        elif [ -f /etc/gentoo-17.0.3 ]; then
+            /proj/standard/share/blender-2.78.5-gentoo-17.0.3-py35/blender --python /projdump/pythonTestWindoze.DONOTDELETE/rbhus/etc/startupScripts/blend/beforeFile.py "$@" --python /projdump/pythonTestWindoze.DONOTDELETE/rbhus/etc/startupScripts/blend/afterFile.py
+        else
+            /proj/standard/share/blender-2.78.5-gentoo-py35/blender --python /projdump/pythonTestWindoze.DONOTDELETE/rbhus/etc/startupScripts/blend/beforeFile.py "$@" --python /projdump/pythonTestWindoze.DONOTDELETE/rbhus/etc/startupScripts/blend/afterFile.py
+        fi
+    else
+        /proj/standard/share/blender-2.78.5-ubuntu/blender --python /projdump/pythonTestWindoze.DONOTDELETE/rbhus/etc/startupScripts/blend/beforeFile.py "$@" --python /projdump/pythonTestWindoze.DONOTDELETE/rbhus/etc/startupScripts/blend/afterFile.py
+    fi
+fi

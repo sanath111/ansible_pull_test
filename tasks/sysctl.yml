@@ -1,0 +1,7 @@
+- name: sysctl-conf
+  copy:
+    src: files/sysctl.conf
+    dest: /etc/sysctl.conf
+    owner: root
+    group: root
+    mode: 0644

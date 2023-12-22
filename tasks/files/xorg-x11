@@ -1,0 +1,13 @@
+Section "Device"
+    Identifier     "Device0"
+    Driver         "nvidia"
+    VendorName     "NVIDIA Corporation"
+    Option         "TripleBuffer" "1"
+    Option         "FlatPanelProperties" "Dithering = Enabled"
+    Option         "RenderAccel" "True"
+    Option         "AllowGLXWithComposite" "True"
+    Option         "AddARGBGLXVisuals" "True"
+    Option         "SLI" "Off"
+    Option         "MultiGPU" "Off"
+    Option         "BaseMosaic" "Off"
+EndSection

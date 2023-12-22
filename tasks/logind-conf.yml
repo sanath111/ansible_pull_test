@@ -1,0 +1,7 @@
+- name: logind-conf
+  copy:
+    src: files/logind.conf
+    dest: /etc/systemd/logind.conf
+    owner: root
+    group: root
+    mode: 0666

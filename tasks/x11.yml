@@ -1,0 +1,7 @@
+- name: xorg-x11
+  copy:
+    src: files/xorg-x11
+    dest: /etc/X11/xorg.conf.d/10-nvidia.conf
+    owner: root
+    group: root
+    mode: 0644

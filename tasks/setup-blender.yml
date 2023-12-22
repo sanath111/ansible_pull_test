@@ -1,0 +1,12 @@
+- name: remove old blender
+  command: sudo rm -fv /usr/local/bin/blender*
+
+- name: setup-blender
+  copy:
+    src: "{{item}}"
+    dest: /usr/local/bin
+    owner: root
+    group: root
+    mode: 0777
+  with_fileglob:
+    - files/blender/blender*

@@ -1,0 +1,7 @@
+- name: nsswitch
+  copy:
+    src: files/nsswitch
+    dest: /etc/nsswitch.conf
+    owner: root
+    group: root
+    mode: 0644

@@ -1,0 +1,8 @@
+#!/bin/bash
+export LC_ALL="en_US.UTF-8"
+
+if [[ $USER = "bluepixels" ]]; then
+  echo "Not available to bluepixels"
+else
+  /proj/standard/share/blender-2.83-lts/blender --python /proj/standard/share/startupScripts/beforeFile_2_8.py "$@" --python /proj/standard/share/startupScripts/afterFile_2_8.py
+fi

@@ -1,0 +1,7 @@
+- name: setup ldap
+  copy:
+    src: files/ldap
+    dest: /etc/ldap.conf
+    owner: root
+    group: root
+    mode: 0644

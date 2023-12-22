@@ -1,0 +1,31 @@
+- name: common-auth
+  copy:
+    src: files/common-auth
+    dest: /etc/pam.d/common-auth
+    owner: root
+    group: root
+    mode: 0644
+
+- name: common-account
+  copy:
+    src: files/common-account
+    dest: /etc/pam.d/common-account
+    owner: root
+    group: root
+    mode: 0644
+
+- name: common-session
+  copy:
+    src: files/common-session
+    dest: /etc/pam.d/common-session
+    owner: root
+    group: root
+    mode: 0644
+
+- name: common-password
+  copy:
+    src: files/common-password
+    dest: /etc/pam.d/common-password
+    owner: root
+    group: root
+    mode: 0644
