@@ -1,17 +1,32 @@
-- name: set python3
-  command: sudo ln -sf /usr/bin/python3 /usr/bin/python
+- name: set python path
+  file:
+    src: /usr/bin/python3
+    dest: /usr/bin/python
+    owner: root
+    group: root
+    state: link
 
 - name: create crap folders
-  command: "sudo {{ item }}"
+  file:
+    path: "{{ item }}"
+    state: directory
+    owner: root
+    group: root
+    mode: 0777
   with_items:
-  - mkdir -p -m 777 /crap/LOCAL.crap
-  - mkdir -p -m 777 /crap/versionCache
-  - mkdir -p -m 777 /crap/mercurial
+    - /crap/LOCAL.crap
+    - /crap/versionCache
+    - /crap/mercurial
 
 - name: make symlinks
-  command: "sudo {{ item }}"
+  file:
+    src: "{{ item.src }}"
+    dest: "{{ item.dest }}"
+    owner: root
+    group: root
+    state: link
   with_items:
-  - ln -sf /blueprod/CRAP/crap /crap/crap.server
-  - ln -sf /blueprod/STOR1/proj /proj
-  - ln -sf /blueprod/STOR1/projdump /projdump
-  - ln -sf /blueprod/STOR1/library /library
+    - { src: '/blueprod/CRAP/crap', dest: '/crap/crap.server' }
+    - { src: '/blueprod/STOR1/proj', dest: '/proj' }
+    - { src: '/blueprod/STOR1/projdump', dest: '/projdump' }
+    - { src: '/blueprod/STOR1/library', dest: '/library' }
