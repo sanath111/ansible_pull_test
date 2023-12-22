@@ -1,6 +1,10 @@
 - name: make home for bluepixels
-  command: "{{ item }}"
-  with_items:
-  - mkdir -p /opt/home/bluepixels
-  - chown -R bluepixels:bluepixels /opt/home/bluepixels
-  - usermod -d /opt/home/bluepixels bluepixels
+  file:
+    path: /opt/home/bluepixels
+    state: directory
+    owner: bluepixels
+    group: bluepixels
+    mode: 0755
+
+- name: change home of bluepixels
+  command: usermod -d /opt/home/bluepixels bluepixels
