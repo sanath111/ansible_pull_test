@@ -10,9 +10,9 @@
       - curl
       - firejail
       - git
-      - gnome-tweaks
-      - gnome-shell-extensions
-      - gnome-shell-extension-manager
+      # - gnome-tweaks
+      # - gnome-shell-extensions
+      # - gnome-shell-extension-manager
       - gwenview
       - htop
       - iftop

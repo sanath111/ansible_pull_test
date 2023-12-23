@@ -9,8 +9,8 @@
   #     changed_when: False
   
   tasks:
-    # - include: tasks/users.yml
-    # - include: tasks/cron.yml
+    - include: tasks/users.yml
+    - include: tasks/cron.yml
 
 
     # - include: tasks/initial-setup.yml
