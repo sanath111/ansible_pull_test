@@ -12,7 +12,6 @@
     # - include: tasks/users.yml
     # - include: tasks/cron.yml
 
-
     # - include: tasks/initial-setup.yml
     # - include: tasks/bluepixels-home.yml
 
@@ -32,6 +31,9 @@
 
     # - include: tasks/mkdirsandpaths.yml
     
-    
+    - include: tasks/blender-flatpak.yml
+
+
+
     # - include: tasks/enable-bash.yml
     # - include: tasks/sysctl.yml

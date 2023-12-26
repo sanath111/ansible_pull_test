@@ -1,0 +1,4 @@
+#!/bin/bash
+export LC_ALL="en_US.UTF-8"
+
+flatpak run --filesystem=/tmp/ org.blender.Blender "$@"

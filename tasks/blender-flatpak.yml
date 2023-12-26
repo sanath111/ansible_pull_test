@@ -1,0 +1,13 @@
+- name: install blender flatpak
+  flatpak:
+    name: org.blender.Blender
+    state: present
+    method: system
+
+- name: copy blender flatpak file
+  copy:
+    src: files/blender_flatpak
+    dest: /usr/local/bin
+    owner: root
+    group: root
+    mode: 0777
