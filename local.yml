@@ -19,15 +19,15 @@
 
     # - include: tasks/install-drivers.yml
 
-    # - include: tasks/autofs.yml
-    # - include: tasks/ldap.yml
-    # - include: tasks/pamd.yml
-    # - include: tasks/nsswitch.yml
-    # - include: tasks/hosts.yml
-    # - include: tasks/x11.yml
-    # - include: tasks/sudoers.yml
-    # - include: tasks/logind-conf.yml
-    # - include: tasks/setup-blender.yml
+    - include: tasks/autofs.yml
+    - include: tasks/ldap.yml
+    - include: tasks/pamd.yml
+    - include: tasks/nsswitch.yml
+    - include: tasks/hosts.yml
+    - include: tasks/x11.yml
+    - include: tasks/sudoers.yml
+    - include: tasks/logind-conf.yml
+    - include: tasks/setup-blender.yml
 
     # - include: tasks/mkdirsandpaths.yml
     
