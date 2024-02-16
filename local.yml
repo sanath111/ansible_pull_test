@@ -31,7 +31,7 @@
 
     # - include: tasks/mkdirsandpaths.yml
     
-    - include: tasks/blender-flatpak.yml
+    # - include: tasks/blender-flatpak.yml
 
 
 
